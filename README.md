@@ -51,3 +51,9 @@ Inline $\pi$
 Separated math below:
 $$\sum_n f(n)$$
 
+### Quote
+> this is quote
+
+### Definition List
+Term 1
+:   Hogehoge
