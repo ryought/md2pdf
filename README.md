@@ -1,9 +1,12 @@
 # md2pdf example
-2017.06
+2018.05
+
+## Install
+- Install dependencies
+- Copy `md2pdf` to where your PATH recognizes (e.g. /usr/local/bin/)
+    make sure `$ md2pdf` on shell successes
 
 ## Usage
-- Place `Makefile`
-    - list md filenames you want to compile
 - Write markdown
     - github flavored markdown style: section(#), item list, numbering, immidiate newline
     - with direct LaTeX syntax
@@ -13,14 +16,17 @@
         - Image(wrapfig - pdf,png,...)
         - Chemical Symbols(mhchem) \ce{Na2S2O3}
         - Url(url)
-- Compile
-    - to convert md into pdf: `$ make`
-    - md -> tex -> pdf
+- Watch
+    - run `$ md2pdf -w hoge.md`
+    - watch updates of `hoge.md`, and automatically compiles is into `hoge.md.pdf`
+- or Single Compile
+    - run `$ md2pdf hoge.md`
+    - md -> tex -> pdf, generates `hoge.md.pdf`
 
 ## Dependence
 - pandoc
 - MacTex (or lualatex + packages needed)
-
+- facebook/watchman
 
 \begin{figure}
 \centering
